@@ -1,6 +1,6 @@
 # Case Técnico - Processo Seletivo p/ Data Engineer da Involves
 
-Versão do Python:
+Versão do Python: 3.10
 
 Versão do Pentaho Data Integration: 8.3
 
