@@ -430,10 +430,32 @@
     <created_date>2022/04/02 17:12:54.499</created_date>
     <modified_user>-</modified_user>
     <modified_date>2022/04/02 17:12:54.499</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>Transformação responsável por popular
+a fato ponto extra.</note>
+      <xloc>80</xloc>
+      <yloc>368</yloc>
+      <width>219</width>
+      <heigth>42</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <connection>
     <name>dw_involves_mysql</name>
@@ -536,10 +558,35 @@
     </hop>
     <hop>
       <from>Group by</from>
-      <to>Table output</to>
+      <to>FT_PONTO_EXTRA</to>
       <enabled>Y</enabled>
     </hop>
   </order>
+  <step>
+    <name>&lt;&gt; PONTO EXTRA</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step>
     <name>DATASET_TESTE_DE.csv</name>
     <type>CsvInput</type>
@@ -692,7 +739,7 @@
     </GUI>
   </step>
   <step>
-    <name>DIM_PDV</name>
+    <name>DIM_CALENDARIO</name>
     <type>DBLookup</type>
     <description/>
     <distribute>Y</distribute>
@@ -708,19 +755,19 @@
     <cache_size>0</cache_size>
     <lookup>
       <schema>dw_involves</schema>
-      <table>DIM_PDV</table>
+      <table>DIM_CALENDARIO</table>
       <orderby/>
       <fail_on_multiple>N</fail_on_multiple>
       <eat_row_on_failure>N</eat_row_on_failure>
       <key>
-        <name>ID_PONTO_VENDA</name>
-        <field>ID_PONTO_VENDA</field>
+        <name>DATA</name>
+        <field>DATA</field>
         <condition>=</condition>
         <name2/>
       </key>
       <value>
-        <name>SK_DIM_PDV</name>
-        <rename>SK_DIM_PDV</rename>
+        <name>SK_DIM_CALENDARIO</name>
+        <rename>SK_DIM_CALENDARIO</rename>
         <default>-3</default>
         <type>Integer</type>
       </value>
@@ -734,7 +781,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>336</xloc>
+      <xloc>576</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
@@ -788,7 +835,7 @@
     </GUI>
   </step>
   <step>
-    <name>DIM_CALENDARIO</name>
+    <name>DIM_PDV</name>
     <type>DBLookup</type>
     <description/>
     <distribute>Y</distribute>
@@ -804,19 +851,19 @@
     <cache_size>0</cache_size>
     <lookup>
       <schema>dw_involves</schema>
-      <table>DIM_CALENDARIO</table>
+      <table>DIM_PDV</table>
       <orderby/>
       <fail_on_multiple>N</fail_on_multiple>
       <eat_row_on_failure>N</eat_row_on_failure>
       <key>
-        <name>DATA</name>
-        <field>DATA</field>
+        <name>ID_PONTO_VENDA</name>
+        <field>ID_PONTO_VENDA</field>
         <condition>=</condition>
         <name2/>
       </key>
       <value>
-        <name>SK_DIM_CALENDARIO</name>
-        <rename>SK_DIM_CALENDARIO</rename>
+        <name>SK_DIM_PDV</name>
+        <rename>SK_DIM_PDV</rename>
         <default>-3</default>
         <type>Integer</type>
       </value>
@@ -830,7 +877,59 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>576</xloc>
+      <xloc>336</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by</name>
+    <type>GroupBy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore/>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname/>
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>SK_DIM_PDV</name>
+      </field>
+      <field>
+        <name>SK_DIM_LINHA_PRODUTO</name>
+      </field>
+      <field>
+        <name>SK_DIM_CALENDARIO</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>SOMA_PONTO_EXTRA</aggregate>
+        <subject>VALOR</subject>
+        <type>SUM</type>
+        <valuefield/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
@@ -876,31 +975,6 @@
     <GUI>
       <xloc>224</xloc>
       <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>&lt;&gt; PONTO EXTRA</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>224</xloc>
-      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -963,59 +1037,7 @@
     </GUI>
   </step>
   <step>
-    <name>Group by</name>
-    <type>GroupBy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <all_rows>N</all_rows>
-    <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>grp</prefix>
-    <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
-    <give_back_row>N</give_back_row>
-    <group>
-      <field>
-        <name>SK_DIM_PDV</name>
-      </field>
-      <field>
-        <name>SK_DIM_LINHA_PRODUTO</name>
-      </field>
-      <field>
-        <name>SK_DIM_CALENDARIO</name>
-      </field>
-    </group>
-    <fields>
-      <field>
-        <aggregate>SOMA_PONTO_EXTRA</aggregate>
-        <subject>VALOR</subject>
-        <type>SUM</type>
-        <valuefield/>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>848</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Table output</name>
+    <name>FT_PONTO_EXTRA</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>

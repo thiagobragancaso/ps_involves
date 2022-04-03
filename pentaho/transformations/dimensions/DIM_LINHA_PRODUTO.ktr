@@ -430,10 +430,32 @@
     <created_date>2022/04/02 15:52:59.923</created_date>
     <modified_user>-</modified_user>
     <modified_date>2022/04/02 15:52:59.923</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>Transformação responsável por popular
+a dimensão de linha de produto.</note>
+      <xloc>80</xloc>
+      <yloc>192</yloc>
+      <width>219</width>
+      <heigth>42</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <connection>
     <name>dw_involves_mysql</name>
@@ -672,6 +694,110 @@
     </GUI>
   </step>
   <step>
+    <name>DIM_LINHA_PRODUTO</name>
+    <type>DimensionLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <schema>dw_involves</schema>
+    <table>DIM_LINHA_PRODUTO</table>
+    <connection>dw_involves_mysql</connection>
+    <commit>100</commit>
+    <update>Y</update>
+    <fields>
+      <key>
+        <name>ID_LINHA_PRODUTO</name>
+        <lookup>ID_LINHA_PRODUTO</lookup>
+      </key>
+      <date>
+        <name/>
+        <from>DT_VS_INICIO</from>
+        <to>DT_VS_FIM</to>
+      </date>
+      <field>
+        <name>NOME_LINHA_PRODUTO</name>
+        <lookup>NOME_LINHA_PRODUTO</lookup>
+        <update>Update</update>
+      </field>
+      <field>
+        <name>MARCA_LINHA_PRODUTO</name>
+        <lookup>MARCA_LINHA_PRODUTO</lookup>
+        <update>Update</update>
+      </field>
+      <return>
+        <name>SK_DIM_LINHA_PRODUTO</name>
+        <rename/>
+        <creation_method>tablemax</creation_method>
+        <use_autoinc>N</use_autoinc>
+        <version>VS_DIM_LINHA_PRODUTO</version>
+      </return>
+    </fields>
+    <sequence/>
+    <min_year>1900</min_year>
+    <max_year>2199</max_year>
+    <cache_size>5000</cache_size>
+    <preload_cache>N</preload_cache>
+    <use_start_date_alternative>N</use_start_date_alternative>
+    <start_date_alternative>none</start_date_alternative>
+    <start_date_field_name/>
+    <useBatch>N</useBatch>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>ID_LINHA_PRODUTO</name>
+      </field>
+      <field>
+        <name>NOME_LINHA_PRODUTO</name>
+      </field>
+      <field>
+        <name>MARCA_LINHA_PRODUTO</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Sort rows</name>
     <type>SortRows</type>
     <description/>
@@ -768,113 +894,6 @@
     </remotesteps>
     <GUI>
       <xloc>384</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>ID_LINHA_PRODUTO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>NOME_LINHA_PRODUTO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>MARCA_LINHA_PRODUTO</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>528</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>DIM_LINHA_PRODUTO</name>
-    <type>DimensionLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <schema>dw_involves</schema>
-    <table>DIM_LINHA_PRODUTO</table>
-    <connection>dw_involves_mysql</connection>
-    <commit>100</commit>
-    <update>Y</update>
-    <fields>
-      <key>
-        <name>ID_LINHA_PRODUTO</name>
-        <lookup>ID_LINHA_PRODUTO</lookup>
-      </key>
-      <date>
-        <name/>
-        <from>DT_VS_INICIO</from>
-        <to>DT_VS_FIM</to>
-      </date>
-      <field>
-        <name>NOME_LINHA_PRODUTO</name>
-        <lookup>NOME_LINHA_PRODUTO</lookup>
-        <update>Update</update>
-      </field>
-      <field>
-        <name>MARCA_LINHA_PRODUTO</name>
-        <lookup>MARCA_LINHA_PRODUTO</lookup>
-        <update>Update</update>
-      </field>
-      <return>
-        <name>SK_DIM_LINHA_PRODUTO</name>
-        <rename/>
-        <creation_method>tablemax</creation_method>
-        <use_autoinc>N</use_autoinc>
-        <version>VS_DIM_LINHA_PRODUTO</version>
-      </return>
-    </fields>
-    <sequence/>
-    <min_year>1900</min_year>
-    <max_year>2199</max_year>
-    <cache_size>5000</cache_size>
-    <preload_cache>N</preload_cache>
-    <use_start_date_alternative>N</use_start_date_alternative>
-    <start_date_alternative>none</start_date_alternative>
-    <start_date_field_name/>
-    <useBatch>N</useBatch>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>688</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
