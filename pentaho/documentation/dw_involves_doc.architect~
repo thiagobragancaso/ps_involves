@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>dw_involves_doc</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="a20c516e-b2a5-4272-a2e0-aab75059b8da" name="Dimensão Calendário" objectType="TABLE" physicalName="DIM_CALENDARIO" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="fcc09327-8cd2-44cd-b29c-b7b9669a393b" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Chave artificial da dimensão calendário.</remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="8e175392-ec36-47b4-b3b9-72223ba9a1f4" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_DATA_seq" defaultValue="" name="Data" nullable="0" physicalName="DATA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="240d2496-b94e-490e-9cc6-6f7ad59f1127" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_MES_seq" defaultValue="" name="Mês" nullable="0" physicalName="MES" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Número do mês.</remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="7e0d6790-6904-4d95-b4ce-ff690e5a0109" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_ANO_seq" defaultValue="" name="Ano" nullable="0" physicalName="ANO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="f4f319fb-1ff9-4cc8-8ba2-4e1a21232ca4" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_DIA_MES_seq" defaultValue="" name="Dia do Mês" nullable="0" physicalName="DIA_MES" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="dd5afad7-ed3c-4cba-85e5-62169cc7877e" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_DIA_SEMANA_seq" defaultValue="" name="Dia da Semana" nullable="0" physicalName="DIA_SEMANA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Número do dia da semana.</remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="c41018f6-502a-4914-b219-2bd6d32c12a2" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_NOME_DIA_SEMANA_seq" defaultValue="" name="Descrição do Dia da Semana" nullable="0" physicalName="NOME_DIA_SEMANA" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="9e55cee3-cc8b-4bca-af74-7a8ab4a1f8c2" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_NOME_MES_seq" defaultValue="" name="Nome do Mês" nullable="0" physicalName="NOME_MES" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="7409476e-9033-43ae-a7c6-8ffad0c6c4e2" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_MES_ANO_seq" defaultValue="" name="Mês/Ano" nullable="0" physicalName="MES_ANO" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Ex.: 01/2022</remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="f4c5b302-7372-4388-a96f-b09b62756b92" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_TRIMESTRE_seq" defaultValue="" name="Trimestre" nullable="0" physicalName="TRIMESTRE" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="6875c54f-8f3f-4de3-9c05-8fb1746984e8" autoIncrement="false" autoIncrementSequenceName="DIM_CALENDARIO_SEMESTRE_seq" defaultValue="" name="Semestre" nullable="0" physicalName="SEMESTRE" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX13" populated="true" UUID="21eb02fe-1282-4628-bc46-a4aadb8efe6e" clustered="false" name="SK_DIM_CALENDARIO" physicalName="SK_DIM_CALENDARIO" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC14" populated="true" UUID="3c1ab8fe-7c94-4073-b0b4-869f1a2227af" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="Surrogate Key (DIM_CALENDARIO)" physicalName="SK_DIM_CALENDARIO" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB15" populated="true" UUID="1b457aec-6c98-446a-a951-9834b4510253" name="Dimensão Ponto de Venda" objectType="TABLE" physicalName="DIM_PDV" >
+   <remarks></remarks>
+   <folder id="FOLTAB151" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL16" populated="true" UUID="ed7664a9-28cb-43a6-9569-fcda3e3b8abe" autoIncrement="false" autoIncrementSequenceName="DIM_PDV_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Chave artificial da dimensão de ponto de venda.</remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="04cc6ba9-c172-48e8-aad1-c54d77ecb661" autoIncrement="false" autoIncrementSequenceName="DIM_PDV_VS_DIM_PDV_seq" defaultValue="" name="Versão do Registro" nullable="0" physicalName="VS_DIM_PDV" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Campo de versão criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="8ae97986-f958-4a55-b22f-4c4f0f8dd1e5" autoIncrement="false" autoIncrementSequenceName="DIM_PDV_DT_VS_INICIO_seq" defaultValue="" name="Data de Início da Versão" nullable="0" physicalName="DT_VS_INICIO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks>Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="c85c7aff-d50b-46ec-ab71-857ea96cd1eb" autoIncrement="false" autoIncrementSequenceName="DIM_PDV_DT_VS_FIM_seq" defaultValue="" name="Data de Término da Versão" nullable="0" physicalName="DT_VS_FIM" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks>Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="dd9ae5b4-acd4-4a19-9488-47d79b02ba74" autoIncrement="false" autoIncrementSequenceName="DIM_PDV_ID_PONTO_VENDA_seq" defaultValue="" name="ID do Ponto de Venda" nullable="0" physicalName="ID_PONTO_VENDA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Chave natural que identifica os pontos de venda no sistema de origem.</remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="d61b9a46-09f7-4be6-bb3b-9e55750a8e01" autoIncrement="false" autoIncrementSequenceName="DIM_PDV_NOME_PONTO_VENDA_seq" defaultValue="" name="Nome do Ponto de Venda" nullable="0" physicalName="NOME_PONTO_VENDA" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="4b48b4b1-0b9a-4545-88cc-fcd73fd49a85" autoIncrement="false" autoIncrementSequenceName="DIM_PDV_PERFIL_PONTO_VENDA_seq" defaultValue="" name="Perfil do Ponto de Venda" nullable="0" physicalName="PERFIL_PONTO_VENDA" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB153" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB152" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB154" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX23" populated="true" UUID="041673fa-9643-45ec-bfc8-23ae56d2bb2d" clustered="false" name="SK_DIM_PDV" physicalName="SK_DIM_PDV" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC24" populated="true" UUID="6ca8ee17-a69a-4529-894b-a14fa7bb44ec" ascendingOrDescending="UNSPECIFIED" column-ref="COL16" name="Surrogate Key (DIM_PDV)" physicalName="SK_DIM_PDV" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB25" populated="true" UUID="36e76f1d-ba2f-4209-85ac-3421b2bc9812" name="Dimensão Linha do Produto" objectType="TABLE" physicalName="DIM_LINHA_PRODUTO" >
+   <remarks></remarks>
+   <folder id="FOLTAB251" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL26" populated="true" UUID="84ff2cba-fcca-4daf-beaf-e70b4df3073e" autoIncrement="false" autoIncrementSequenceName="DIM_LINHA_PRODUTO_SK_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Surrogate Key (DIM_LINHA_PRODUTO)" nullable="0" physicalName="SK_DIM_LINHA_PRODUTO" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Chave artifical da dimensão linha de produto.</remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="0465ebb8-ac35-43bb-b4ae-8ba6fab197e2" autoIncrement="false" autoIncrementSequenceName="DIM_LINHA_PRODUTO_VS_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Versão do Registro" nullable="0" physicalName="VS_DIM_LINHA_PRODUTO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="45dd8a5b-3322-4c86-92ba-af0b1066120b" autoIncrement="false" autoIncrementSequenceName="DIM_LINHA_PRODUTO_DT_VS_INICIO_seq" defaultValue="" name="Data de Início da Versão" nullable="0" physicalName="DT_VS_INICIO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks>Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="f5b5a92c-76b0-4540-992e-c2a0dcda4171" autoIncrement="false" autoIncrementSequenceName="DIM_LINHA_PRODUTO_DT_VS_FIM_seq" defaultValue="" name="Data de Término da Versão" nullable="0" physicalName="DT_VS_FIM" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks>Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="df8e4997-c8c8-4240-8919-ed461246d2ba" autoIncrement="false" autoIncrementSequenceName="DIM_LINHA_PRODUTO_ID_LINHA_PRODUTO_seq" defaultValue="" name="ID da Linha de Produto" nullable="0" physicalName="ID_LINHA_PRODUTO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Chave natural responsável por identificar a linha do produto no sistema de origem.</remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="47896875-2b24-4834-8b25-9474f95052c0" autoIncrement="false" autoIncrementSequenceName="DIM_LINHA_PRODUTO_NOME_LINHA_PRODUTO_seq" defaultValue="" name="Nome da Linha de Produto" nullable="0" physicalName="NOME_LINHA_PRODUTO" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="63157522-3da3-42d0-bb78-ddc04dcfd28f" autoIncrement="false" autoIncrementSequenceName="DIM_LINHA_PRODUTO_MARCA_LINHA_PRODUTO_seq" defaultValue="" name="Marca da Linha de Produto" nullable="0" physicalName="MARCA_LINHA_PRODUTO" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB253" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB252" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB254" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX33" populated="true" UUID="14022c7f-413e-46d9-aee0-a2c8a1968d20" clustered="false" name="SK_DIM_LINHA_PRODUTO" physicalName="SK_DIM_LINHA_PRODUTO" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC34" populated="true" UUID="3d02f274-9ea5-4ad9-b9d8-b18e22bad6fc" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="Surrogate Key (DIM_LINHA_PRODUTO)" physicalName="SK_DIM_LINHA_PRODUTO" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB35" populated="true" UUID="2c374038-68bc-44dd-8d38-93f0d4232e90" name="Fato Disponibilidade" objectType="TABLE" physicalName="FT_DISPONIBILIDADE" >
+   <remarks></remarks>
+   <folder id="FOLTAB351" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL36" populated="true" UUID="b307e83c-4d0c-452e-9dce-d51e43e505c2" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="3affa5db-5138-462c-9919-ffebcdf52606" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Surrogate Key (DIM_LINHA_PRODUTO)" nullable="0" physicalName="SK_DIM_LINHA_PRODUTO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="adbdf75c-8461-45e7-8d00-7affc22d9af8" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="2aee4e79-8e10-4fee-a7d3-98561a2ff8d3" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_QTD_PRESENCA_seq" defaultValue="" name="Quantidade de Presença" nullable="0" physicalName="QTD_PRESENCA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Quantidade de presença da linha de produto.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB353" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB352" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB354" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX40" populated="true" UUID="baf24006-81ad-4ea1-ab97-3d49c957ee45" clustered="false" name="FT_DISPONIBILIDADE_pk" physicalName="FT_DISPONIBILIDADE_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC41" populated="true" UUID="4e37bc3a-53b7-4a13-a539-4f9d01576fab" ascendingOrDescending="UNSPECIFIED" column-ref="COL36" name="Surrogate Key (DIM_PDV)" physicalName="SK_DIM_PDV" />
+     <index-column id="IDC42" populated="true" UUID="23600adf-faf9-4fae-bd9f-81dda52ba0fe" ascendingOrDescending="UNSPECIFIED" column-ref="COL37" name="Surrogate Key (DIM_LINHA_PRODUTO)" physicalName="SK_DIM_LINHA_PRODUTO" />
+     <index-column id="IDC43" populated="true" UUID="fd8758ee-baf4-49da-85bf-79754f66142f" ascendingOrDescending="UNSPECIFIED" column-ref="COL38" name="Surrogate Key (DIM_CALENDARIO)" physicalName="SK_DIM_CALENDARIO" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB44" populated="true" UUID="02f271c5-654d-4fee-95e7-97515ec45c62" name="Fato Disponibilidade Agregada" objectType="TABLE" physicalName="FT_DISPONIBILIDADE_AGG" >
+   <remarks></remarks>
+   <folder id="FOLTAB441" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL45" populated="true" UUID="8496a40c-3fa4-4452-bd0c-87dd2d2ad1d9" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="e45b8e5a-5191-431d-8546-3c0ba3ddf46b" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_SK_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_CALENDARIO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL47" populated="true" UUID="a15009ad-7338-4b54-b117-ea09ea2d9051" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_QTD_PRESENCA_seq" defaultValue="" name="Quantidade de Presença" nullable="0" physicalName="QTD_PRESENCA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Quantidade de presença nas linhas de produto.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB443" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB442" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB444" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX48" populated="true" UUID="aa9f4f60-6444-4b25-9d1b-f4a1ba5c349d" clustered="false" name="FT_DISPONIBILIDADE_AGG_pk" physicalName="FT_DISPONIBILIDADE_AGG_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC49" populated="true" UUID="6eb895d1-a6e8-4c7d-91b4-c6e62ebd586a" ascendingOrDescending="UNSPECIFIED" column-ref="COL45" name="Surrogate Key (DIM_PDV)" physicalName="SK_DIM_PDV" />
+     <index-column id="IDC50" populated="true" UUID="99849597-a55e-481c-b83f-231d6ec0c345" ascendingOrDescending="UNSPECIFIED" column-ref="COL46" name="Surrogate Key (DIM_CALENDARIO)" physicalName="SK_CALENDARIO" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB51" populated="true" UUID="0acd4408-abc1-4686-9a81-76d2ca63176b" name="Fato Ponto Extra" objectType="TABLE" physicalName="FT_PONTO_EXTRA" >
+   <remarks></remarks>
+   <folder id="FOLTAB511" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL52" populated="true" UUID="cbc9649c-1c19-4f6c-b2be-4364ce79e4e1" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="38b43558-4fb1-4689-a79a-afe68362dfda" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Surrogate Key (DIM_LINHA_PRODUTO)" nullable="0" physicalName="SK_DIM_LINHA_PRODUTO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="b8f1ec9f-e885-4a57-a8af-5b9b4021e6e3" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="c4c5ac43-2afa-4947-9e04-041679826f83" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SOMA_PONTO_EXTRA_seq" defaultValue="" name="Soma de Pontos Extras" nullable="0" physicalName="SOMA_PONTO_EXTRA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Soma total dos pontos extras.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB513" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB512" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB514" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX56" populated="true" UUID="d7b80790-fbbc-4b6c-8d14-a2b3f51dbd06" clustered="false" name="FT_PONTO_EXTRA_pk" physicalName="FT_PONTO_EXTRA_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC57" populated="true" UUID="9c1ab0ee-398d-485a-a9ae-05f8d9182d63" ascendingOrDescending="UNSPECIFIED" column-ref="COL52" name="Surrogate Key (DIM_PDV)" physicalName="SK_DIM_PDV" />
+     <index-column id="IDC58" populated="true" UUID="01939576-e37b-4f8f-ab34-145de317ab75" ascendingOrDescending="UNSPECIFIED" column-ref="COL53" name="Surrogate Key (DIM_LINHA_PRODUTO)" physicalName="SK_DIM_LINHA_PRODUTO" />
+     <index-column id="IDC59" populated="true" UUID="8672a1c1-8b4e-48d4-80a2-ac65052e3324" ascendingOrDescending="UNSPECIFIED" column-ref="COL54" name="Surrogate Key (DIM_CALENDARIO)" physicalName="SK_DIM_CALENDARIO" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB60" populated="true" UUID="5a487b03-bb44-4b9d-ac86-4dd50dcaa8d7" name="Fato Ponto Extra Agregada" objectType="TABLE" physicalName="FT_PONTO_EXTRA_AGG" >
+   <remarks></remarks>
+   <folder id="FOLTAB601" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL61" populated="true" UUID="3d7c7f58-e56d-4c91-9967-b4d090fcb55d" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL62" populated="true" UUID="a6d8e972-bcc5-4f81-8fec-3de5ee25c472" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="a49f13b5-37b5-44a2-8c2e-c76e3900ec02" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SOMA_PONTO_EXTRA_seq" defaultValue="" name="Soma de Pontos Extras" nullable="0" physicalName="SOMA_PONTO_EXTRA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Soma total dos pontos extras.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB603" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB602" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB604" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX64" populated="true" UUID="f552ef68-aa23-4ead-9946-4f0c22a2df31" clustered="false" name="FT_PONTO_EXTRA_AGG_pk" physicalName="FT_PONTO_EXTRA_AGG_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC65" populated="true" UUID="28b5a593-feee-4db2-9442-c89003cccf05" ascendingOrDescending="UNSPECIFIED" column-ref="COL61" name="Surrogate Key (DIM_PDV)" physicalName="SK_DIM_PDV" />
+     <index-column id="IDC66" populated="true" UUID="826a1c2e-5a5c-4c19-be39-9f14f2b01e68" ascendingOrDescending="UNSPECIFIED" column-ref="COL62" name="Surrogate Key (DIM_CALENDARIO)" physicalName="SK_DIM_CALENDARIO" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="false" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="88" y="64" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB15" x="663" y="56" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="42" y="305" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB35" x="430" y="233" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB44" x="454" y="348" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB51" x="738" y="328" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB60" x="499" y="473" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
