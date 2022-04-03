@@ -130,13 +130,13 @@
   <table id="TAB35" populated="true" UUID="2c374038-68bc-44dd-8d38-93f0d4232e90" name="Fato Disponibilidade" objectType="TABLE" physicalName="FT_DISPONIBILIDADE" >
    <remarks></remarks>
    <folder id="FOLTAB351" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL36" populated="true" UUID="b307e83c-4d0c-452e-9dce-d51e43e505c2" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL36" populated="true" UUID="b307e83c-4d0c-452e-9dce-d51e43e505c2" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL37" populated="true" UUID="3affa5db-5138-462c-9919-ffebcdf52606" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Surrogate Key (DIM_LINHA_PRODUTO)" nullable="0" physicalName="SK_DIM_LINHA_PRODUTO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL37" populated="true" UUID="3affa5db-5138-462c-9919-ffebcdf52606" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Surrogate Key (DIM_LINHA_PRODUTO)" nullable="0" physicalName="SK_DIM_LINHA_PRODUTO" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL38" populated="true" UUID="adbdf75c-8461-45e7-8d00-7affc22d9af8" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL38" populated="true" UUID="adbdf75c-8461-45e7-8d00-7affc22d9af8" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL39" populated="true" UUID="2aee4e79-8e10-4fee-a7d3-98561a2ff8d3" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_QTD_PRESENCA_seq" defaultValue="" name="Quantidade de Presença" nullable="0" physicalName="QTD_PRESENCA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -158,10 +158,10 @@
   <table id="TAB44" populated="true" UUID="02f271c5-654d-4fee-95e7-97515ec45c62" name="Fato Disponibilidade Agregada" objectType="TABLE" physicalName="FT_DISPONIBILIDADE_AGG" >
    <remarks></remarks>
    <folder id="FOLTAB441" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL45" populated="true" UUID="8496a40c-3fa4-4452-bd0c-87dd2d2ad1d9" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL45" populated="true" UUID="8496a40c-3fa4-4452-bd0c-87dd2d2ad1d9" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL46" populated="true" UUID="e45b8e5a-5191-431d-8546-3c0ba3ddf46b" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_SK_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_CALENDARIO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL46" populated="true" UUID="e45b8e5a-5191-431d-8546-3c0ba3ddf46b" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_SK_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_CALENDARIO" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL47" populated="true" UUID="a15009ad-7338-4b54-b117-ea09ea2d9051" autoIncrement="false" autoIncrementSequenceName="FT_DISPONIBILIDADE_AGG_QTD_PRESENCA_seq" defaultValue="" name="Quantidade de Presença" nullable="0" physicalName="QTD_PRESENCA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -182,13 +182,13 @@
   <table id="TAB51" populated="true" UUID="0acd4408-abc1-4686-9a81-76d2ca63176b" name="Fato Ponto Extra" objectType="TABLE" physicalName="FT_PONTO_EXTRA" >
    <remarks></remarks>
    <folder id="FOLTAB511" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL52" populated="true" UUID="cbc9649c-1c19-4f6c-b2be-4364ce79e4e1" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL52" populated="true" UUID="cbc9649c-1c19-4f6c-b2be-4364ce79e4e1" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL53" populated="true" UUID="38b43558-4fb1-4689-a79a-afe68362dfda" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Surrogate Key (DIM_LINHA_PRODUTO)" nullable="0" physicalName="SK_DIM_LINHA_PRODUTO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL53" populated="true" UUID="38b43558-4fb1-4689-a79a-afe68362dfda" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_LINHA_PRODUTO_seq" defaultValue="" name="Surrogate Key (DIM_LINHA_PRODUTO)" nullable="0" physicalName="SK_DIM_LINHA_PRODUTO" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL54" populated="true" UUID="b8f1ec9f-e885-4a57-a8af-5b9b4021e6e3" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL54" populated="true" UUID="b8f1ec9f-e885-4a57-a8af-5b9b4021e6e3" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL55" populated="true" UUID="c4c5ac43-2afa-4947-9e04-041679826f83" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_SOMA_PONTO_EXTRA_seq" defaultValue="" name="Soma de Pontos Extras" nullable="0" physicalName="SOMA_PONTO_EXTRA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -210,10 +210,10 @@
   <table id="TAB60" populated="true" UUID="5a487b03-bb44-4b9d-ac86-4dd50dcaa8d7" name="Fato Ponto Extra Agregada" objectType="TABLE" physicalName="FT_PONTO_EXTRA_AGG" >
    <remarks></remarks>
    <folder id="FOLTAB601" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL61" populated="true" UUID="3d7c7f58-e56d-4c91-9967-b4d090fcb55d" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL61" populated="true" UUID="3d7c7f58-e56d-4c91-9967-b4d090fcb55d" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SK_DIM_PDV_seq" defaultValue="" name="Surrogate Key (DIM_PDV)" nullable="0" physicalName="SK_DIM_PDV" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL62" populated="true" UUID="a6d8e972-bcc5-4f81-8fec-3de5ee25c472" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL62" populated="true" UUID="a6d8e972-bcc5-4f81-8fec-3de5ee25c472" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SK_DIM_CALENDARIO_seq" defaultValue="" name="Surrogate Key (DIM_CALENDARIO)" nullable="0" physicalName="SK_DIM_CALENDARIO" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL63" populated="true" UUID="a49f13b5-37b5-44a2-8c2e-c76e3900ec02" autoIncrement="false" autoIncrementSequenceName="FT_PONTO_EXTRA_AGG_SOMA_PONTO_EXTRA_seq" defaultValue="" name="Soma de Pontos Extras" nullable="0" physicalName="SOMA_PONTO_EXTRA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -232,19 +232,59 @@
    </folder>
   </table>
   <relationships>
+   <relationship id="REL67" populated="true" UUID="7bbf40eb-9407-4069-8711-a5a63884b7cb" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="DIM_CALENDARIO_FT_DISPONIBILIDADE_fk" physicalName="DIM_CALENDARIO_FT_DISPONIBILIDADE_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP68" populated="true" UUID="f73fab13-085d-48b6-b14f-9f13ade8dc06" fk-column-ref="COL38" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL69" populated="true" UUID="b1c9c579-1286-4b09-943f-1ec7ed11658b" deferrability="7" deleteRule="3" fk-table-ref="TAB44" fkCardinality="7" identifying="true" name="DIM_CALENDARIO_FT_DISPONIBILIDADE_AGG_fk" physicalName="DIM_CALENDARIO_FT_DISPONIBILIDADE_AGG_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP70" populated="true" UUID="01a9591c-0935-430c-8ae6-a6be062e6877" fk-column-ref="COL46" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL71" populated="true" UUID="0fa5025b-920d-4085-84fb-0ed1a6e0b396" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="true" name="DIM_CALENDARIO_FT_PONTO_EXTRA_AGG_fk" physicalName="DIM_CALENDARIO_FT_PONTO_EXTRA_AGG_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP72" populated="true" UUID="fc473f0e-25ec-4a39-b2d5-85ed1276e6dd" fk-column-ref="COL62" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL73" populated="true" UUID="36dbba59-f3b3-4760-ab74-5f8a62fc6982" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="7" identifying="true" name="DIM_CALENDARIO_FT_PONTO_EXTRA_fk" physicalName="DIM_CALENDARIO_FT_PONTO_EXTRA_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP74" populated="true" UUID="4e3bc58d-de40-475c-b9a0-e014aeb64f66" fk-column-ref="COL54" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL75" populated="true" UUID="0113ca32-4baa-4ee9-a73a-4f1db86c8b06" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="DIM_PDV_FT_DISPONIBILIDADE_fk" physicalName="DIM_PDV_FT_DISPONIBILIDADE_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP76" populated="true" UUID="8fd9f911-ef29-4d15-9c89-2d74c7df6870" fk-column-ref="COL36" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+   </relationship>
+   <relationship id="REL77" populated="true" UUID="df517129-0f34-479c-9130-4ef6dd7a1255" deferrability="7" deleteRule="3" fk-table-ref="TAB44" fkCardinality="7" identifying="true" name="DIM_PDV_FT_DISPONIBILIDADE_AGG_fk" physicalName="DIM_PDV_FT_DISPONIBILIDADE_AGG_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP78" populated="true" UUID="5d1bcedf-122c-419a-af90-5354b7e52688" fk-column-ref="COL45" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+   </relationship>
+   <relationship id="REL79" populated="true" UUID="42d0177e-9631-42f7-a11a-c5cacb602acf" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="true" name="DIM_PDV_FT_PONTO_EXTRA_AGG_fk" physicalName="DIM_PDV_FT_PONTO_EXTRA_AGG_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP80" populated="true" UUID="30a8bc13-c327-414c-b7f8-3d82ba559c8b" fk-column-ref="COL61" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+   </relationship>
+   <relationship id="REL81" populated="true" UUID="9f598f14-3ac0-422f-8ee4-bbeb15bbcd2d" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="7" identifying="true" name="DIM_PDV_FT_PONTO_EXTRA_fk" physicalName="DIM_PDV_FT_PONTO_EXTRA_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP82" populated="true" UUID="0b4acc5d-a8aa-4a77-9b2a-e716ac8727b0" fk-column-ref="COL52" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+   </relationship>
+   <relationship id="REL83" populated="true" UUID="ab570bbb-aae2-4ff9-84f6-0f54afc33dce" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="DIM_LINHA_PRODUTO_FT_DISPONIBILIDADE_fk" physicalName="DIM_LINHA_PRODUTO_FT_DISPONIBILIDADE_fk" pk-table-ref="TAB25" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP84" populated="true" UUID="d4a3e83d-6c8d-483f-82ab-9fb3945fa484" fk-column-ref="COL37" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL26" />
+   </relationship>
+   <relationship id="REL85" populated="true" UUID="00f08396-9bc6-47f2-a881-730027ce36b0" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="7" identifying="true" name="DIM_LINHA_PRODUTO_FT_PONTO_EXTRA_fk" physicalName="DIM_LINHA_PRODUTO_FT_PONTO_EXTRA_fk" pk-table-ref="TAB25" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP86" populated="true" UUID="c82eb3ac-b8bf-4630-9a86-87deb8f05896" fk-column-ref="COL53" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL26" />
+   </relationship>
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="false" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="88" y="64" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB15" x="663" y="56" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB25" x="42" y="305" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB35" x="430" y="233" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB44" x="454" y="348" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB51" x="738" y="328" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB60" x="499" y="473" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1" x="21" y="40" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB15" x="709" y="37" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="363" y="520" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB35" x="223" y="283" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB44" x="391" y="23" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB51" x="600" y="348" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB60" x="379" y="111" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL67" pkConnection="0.9016393442622951" fkConnection="0.2767527675276753" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="129"/>
+  <table-link relationship-ref="REL83" pkConnection="0.25092250922509224" fkConnection="0.33212996389891697" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL75" pkConnection="0.116" fkConnection="0.555956678700361" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL69" pkConnection="0.3989071038251366" fkConnection="0.2535211267605634" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL77" pkConnection="0.2125984251968504" fkConnection="0.29577464788732394" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL71" pkConnection="0.639344262295082" fkConnection="0.4225352112676056" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL79" pkConnection="0.7165354330708661" fkConnection="0.49295774647887325" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL81" pkConnection="0.768" fkConnection="0.8782287822878229" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL85" pkConnection="0.9003690036900369" fkConnection="0.4187725631768953" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL73" pkConnection="0.10756972111553785" fkConnection="0.6705882352941176" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">

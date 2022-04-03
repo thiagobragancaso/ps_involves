@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<style>
+      .table {
+        background-color:#F5F5FF;
+        border-left:4px solid gray;
+        border-bottom:4px solid gray;
+        border-top:4px solid gray;
+        border-right:4px solid gray;
+        margin-bottom:3em;
+        margin-left:2em;
+        margin-right:2em;
+        padding:1em;
+      }
+      .tableNameHeading h1 {
+          display: inline;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-size:125%;
+        font-weight:bold;
+      }
+        
+      .tableNameHeading h2 {
+        display: inline;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-size:115%;
+        font-weight:normal;
+      }
+      
+      .tableComment { 
+        background-color:#e4efff; margin-bottom:20px;
+      }
+      
+      .tableDefinition { 
+        padding:2px;
+        border-collapse:collapse;
+        margin-top:1em;
+      }
+
+      .tdTableDefinition {
+        padding-right:10px;
+        vertical-align:top;
+        border-top:1px solid #C0C0C0;
+      }
+
+      .tdLogicalColName {
+        width:20em;
+      }
+      
+      .tdPhysicalColName {
+        width:20em;
+      }
+      
+      .tdDataType {
+        width:10em;
+      }
+
+      .tdPkFlag {
+        width:4em;
+      }
+
+      .tdNullFlag {
+        width:9em;
+      }
+
+      .tdTableHeading {
+        padding:2px;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-weight: bold;
+        vertical-align:top;
+        border-bottom: 1px solid #C0C0C0;
+        background-color: rgb(240,240,240);
+      }
+      
+      .subTitle {
+        font-family: Segoe UI, Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .references {
+      }
+      .comment {
+        color:#666666;
+        margin-left:3em;
+        padding:0.25em;
+      }
+    </style>
+<title>dw_involves_doc</title>
+</head>
+<body>
+<center>
+<h2>dw_involves_doc</h2>
+</center>
+<h3>List of tables</h3>
+<ul>
+<li>
+<a href="#Dimens%C3%A3o Calend%C3%A1rio">Dimens&atilde;o Calend&aacute;rio</a>
+</li>
+<li>
+<a href="#Dimens%C3%A3o Linha do Produto">Dimens&atilde;o Linha do Produto</a>
+</li>
+<li>
+<a href="#Dimens%C3%A3o Ponto de Venda">Dimens&atilde;o Ponto de Venda</a>
+</li>
+<li>
+<a href="#Fato Disponibilidade">Fato Disponibilidade</a>
+</li>
+<li>
+<a href="#Fato Disponibilidade Agregada">Fato Disponibilidade Agregada</a>
+</li>
+<li>
+<a href="#Fato Ponto Extra">Fato Ponto Extra</a>
+</li>
+<li>
+<a href="#Fato Ponto Extra Agregada">Fato Ponto Extra Agregada</a>
+</li>
+</ul>
+<div class="tableNameHeading">
+<h1>Dimens&atilde;o Calend&aacute;rio<a name="Dimens%C3%A3o Calend%C3%A1rio"></a>
+</h1>
+<h2>
+      (Physical Name: DIM_CALENDARIO)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_CALENDARIO) (PK)</td><td class="tdTableDefinition">SK_DIM_CALENDARIO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Chave artificial da dimens&atilde;o calend&aacute;rio.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Data</td><td class="tdTableDefinition">DATA</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">M&ecirc;s</td><td class="tdTableDefinition">MES</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">N&uacute;mero do m&ecirc;s.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Ano</td><td class="tdTableDefinition">ANO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Dia do M&ecirc;s</td><td class="tdTableDefinition">DIA_MES</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Dia da Semana</td><td class="tdTableDefinition">DIA_SEMANA</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">N&uacute;mero do dia da semana.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Descri&ccedil;&atilde;o do Dia da Semana</td><td class="tdTableDefinition">NOME_DIA_SEMANA</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Nome do M&ecirc;s</td><td class="tdTableDefinition">NOME_MES</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">M&ecirc;s/Ano</td><td class="tdTableDefinition">MES_ANO</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Ex.: 01/2022</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Trimestre</td><td class="tdTableDefinition">TRIMESTRE</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Semestre</td><td class="tdTableDefinition">SEMESTRE</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#Fato Disponibilidade">Fato Disponibilidade</a> referencing (Surrogate Key (DIM_CALENDARIO))</li>
+<li>
+<a href="#Fato Disponibilidade Agregada">Fato Disponibilidade Agregada</a> referencing (Surrogate Key (DIM_CALENDARIO))</li>
+<li>
+<a href="#Fato Ponto Extra Agregada">Fato Ponto Extra Agregada</a> referencing (Surrogate Key (DIM_CALENDARIO))</li>
+<li>
+<a href="#Fato Ponto Extra">Fato Ponto Extra</a> referencing (Surrogate Key (DIM_CALENDARIO))</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>Dimens&atilde;o Linha do Produto<a name="Dimens%C3%A3o Linha do Produto"></a>
+</h1>
+<h2>
+      (Physical Name: DIM_LINHA_PRODUTO)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_LINHA_PRODUTO) (PK)</td><td class="tdTableDefinition">SK_DIM_LINHA_PRODUTO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Chave artifical da dimens&atilde;o linha de produto.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Vers&atilde;o do Registro</td><td class="tdTableDefinition">VS_DIM_LINHA_PRODUTO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Data de In&iacute;cio da Vers&atilde;o</td><td class="tdTableDefinition">DT_VS_INICIO</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Data de T&eacute;rmino da Vers&atilde;o</td><td class="tdTableDefinition">DT_VS_FIM</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ID da Linha de Produto</td><td class="tdTableDefinition">ID_LINHA_PRODUTO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Chave natural respons&aacute;vel por identificar a linha do produto no sistema de origem.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Nome da Linha de Produto</td><td class="tdTableDefinition">NOME_LINHA_PRODUTO</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Marca da Linha de Produto</td><td class="tdTableDefinition">MARCA_LINHA_PRODUTO</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#Fato Disponibilidade">Fato Disponibilidade</a> referencing (Surrogate Key (DIM_LINHA_PRODUTO))</li>
+<li>
+<a href="#Fato Ponto Extra">Fato Ponto Extra</a> referencing (Surrogate Key (DIM_LINHA_PRODUTO))</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>Dimens&atilde;o Ponto de Venda<a name="Dimens%C3%A3o Ponto de Venda"></a>
+</h1>
+<h2>
+      (Physical Name: DIM_PDV)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_PDV) (PK)</td><td class="tdTableDefinition">SK_DIM_PDV</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Chave artificial da dimens&atilde;o de ponto de venda.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Vers&atilde;o do Registro</td><td class="tdTableDefinition">VS_DIM_PDV</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Campo de vers&atilde;o criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Data de In&iacute;cio da Vers&atilde;o</td><td class="tdTableDefinition">DT_VS_INICIO</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Data de T&eacute;rmino da Vers&atilde;o</td><td class="tdTableDefinition">DT_VS_FIM</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Campo criado automaticamente pelo step dimension lookup/update do Pentaho Data Integration.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ID do Ponto de Venda</td><td class="tdTableDefinition">ID_PONTO_VENDA</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Chave natural que identifica os pontos de venda no sistema de origem.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Nome do Ponto de Venda</td><td class="tdTableDefinition">NOME_PONTO_VENDA</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Perfil do Ponto de Venda</td><td class="tdTableDefinition">PERFIL_PONTO_VENDA</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#Fato Disponibilidade">Fato Disponibilidade</a> referencing (Surrogate Key (DIM_PDV))</li>
+<li>
+<a href="#Fato Disponibilidade Agregada">Fato Disponibilidade Agregada</a> referencing (Surrogate Key (DIM_PDV))</li>
+<li>
+<a href="#Fato Ponto Extra Agregada">Fato Ponto Extra Agregada</a> referencing (Surrogate Key (DIM_PDV))</li>
+<li>
+<a href="#Fato Ponto Extra">Fato Ponto Extra</a> referencing (Surrogate Key (DIM_PDV))</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>Fato Disponibilidade<a name="Fato Disponibilidade"></a>
+</h1>
+<h2>
+      (Physical Name: FT_DISPONIBILIDADE)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_PDV) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Ponto de Venda">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_PDV</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_LINHA_PRODUTO) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Linha do Produto">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_LINHA_PRODUTO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_CALENDARIO) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Calend%C3%A1rio">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_CALENDARIO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Quantidade de Presen&ccedil;a</td><td class="tdTableDefinition">QTD_PRESENCA</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Quantidade de presen&ccedil;a da linha de produto.</div>
+</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#Dimens%C3%A3o Calend%C3%A1rio">Dimens&atilde;o Calend&aacute;rio</a> through (Surrogate Key (DIM_CALENDARIO))</li>
+<li>
+<a href="#Dimens%C3%A3o Ponto de Venda">Dimens&atilde;o Ponto de Venda</a> through (Surrogate Key (DIM_PDV))</li>
+<li>
+<a href="#Dimens%C3%A3o Linha do Produto">Dimens&atilde;o Linha do Produto</a> through (Surrogate Key (DIM_LINHA_PRODUTO))</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>Fato Disponibilidade Agregada<a name="Fato Disponibilidade Agregada"></a>
+</h1>
+<h2>
+      (Physical Name: FT_DISPONIBILIDADE_AGG)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_PDV) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Ponto de Venda">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_PDV</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_CALENDARIO) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Calend%C3%A1rio">FK</a>)
+              </td><td class="tdTableDefinition">SK_CALENDARIO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Quantidade de Presen&ccedil;a</td><td class="tdTableDefinition">QTD_PRESENCA</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Quantidade de presen&ccedil;a nas linhas de produto.</div>
+</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#Dimens%C3%A3o Calend%C3%A1rio">Dimens&atilde;o Calend&aacute;rio</a> through (Surrogate Key (DIM_CALENDARIO))</li>
+<li>
+<a href="#Dimens%C3%A3o Ponto de Venda">Dimens&atilde;o Ponto de Venda</a> through (Surrogate Key (DIM_PDV))</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>Fato Ponto Extra<a name="Fato Ponto Extra"></a>
+</h1>
+<h2>
+      (Physical Name: FT_PONTO_EXTRA)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_PDV) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Ponto de Venda">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_PDV</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_LINHA_PRODUTO) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Linha do Produto">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_LINHA_PRODUTO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_CALENDARIO) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Calend%C3%A1rio">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_CALENDARIO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Soma de Pontos Extras</td><td class="tdTableDefinition">SOMA_PONTO_EXTRA</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Soma total dos pontos extras.</div>
+</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#Dimens%C3%A3o Calend%C3%A1rio">Dimens&atilde;o Calend&aacute;rio</a> through (Surrogate Key (DIM_CALENDARIO))</li>
+<li>
+<a href="#Dimens%C3%A3o Ponto de Venda">Dimens&atilde;o Ponto de Venda</a> through (Surrogate Key (DIM_PDV))</li>
+<li>
+<a href="#Dimens%C3%A3o Linha do Produto">Dimens&atilde;o Linha do Produto</a> through (Surrogate Key (DIM_LINHA_PRODUTO))</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>Fato Ponto Extra Agregada<a name="Fato Ponto Extra Agregada"></a>
+</h1>
+<h2>
+      (Physical Name: FT_PONTO_EXTRA_AGG)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_PDV) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Ponto de Venda">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_PDV</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Surrogate Key (DIM_CALENDARIO) (PK)
+                &nbsp;(<a href="#Dimens%C3%A3o Calend%C3%A1rio">FK</a>)
+              </td><td class="tdTableDefinition">SK_DIM_CALENDARIO</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">Soma de Pontos Extras</td><td class="tdTableDefinition">SOMA_PONTO_EXTRA</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Soma total dos pontos extras.</div>
+</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#Dimens%C3%A3o Calend%C3%A1rio">Dimens&atilde;o Calend&aacute;rio</a> through (Surrogate Key (DIM_CALENDARIO))</li>
+<li>
+<a href="#Dimens%C3%A3o Ponto de Venda">Dimens&atilde;o Ponto de Venda</a> through (Surrogate Key (DIM_PDV))</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
