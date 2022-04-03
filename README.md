@@ -1,6 +1,7 @@
 # Case Técnico - Processo Seletivo p/ Data Engineer da Involves
 
 Versão do Python:
+
 Versão do Pentaho Data Integration: 8.3
 
 # Estrutura de Diretórios
